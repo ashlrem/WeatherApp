@@ -1,15 +1,14 @@
 package code.oddle.app.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+//import javax.persistence.Entity;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.Id;
 
-@Entity
-
+//@Entity
 public class Weather {
 	
-	@Id
-	@GeneratedValue
+//	@Id
+//	@GeneratedValue
 	private Long id;
 	private String cityName;
 	private int cityId;
@@ -170,38 +169,5 @@ public class Weather {
 				+ weatherMainType + ", weatherIcon=" + weatherIcon + ", pressure=" + pressure + ", humidity=" + humidity
 				+ ", windSpeed=" + windSpeed + "]";
 	}
-	
-	
-	
-//	@Override
-//	public String toString() {
-//		StringBuffer buffer = new StringBuffer();
-//		try {
-//			buffer.append("{");
-//			buffer.append("	\"data\": [ ");
-//			buffer.append("		{	");
-//			buffer.append("			\"id\":").append(id).append(",");
-//			buffer.append("			\"cityName\":").append("\"").append(cityName).append("\"").append(",");
-//			buffer.append("			\"cityId\":").append(cityId).append(",");
-//			buffer.append("			\"weatherDate\":").append("\"").append(weatherDate).append("\"").append(",");
-//			buffer.append("			\"logDate\":").append(logDate).append(",");
-//			buffer.append("			\"weatherStr\":").append("\"").append("\"").append(weatherStr).append("\"").append(",");
-//			buffer.append("			\"temperatureK\":").append("\"").append("\"").append(temperatureK).append("\"").append(",");
-//			buffer.append("			\"temperatureC\":").append("\"").append(temperatureC).append("\"").append(",");
-//			buffer.append("			\"temperatureF\":").append("\"").append(temperatureF).append("\"").append(",");
-//			buffer.append("			\"weatherMainType\":").append("\"").append(weatherMainType).append("\"").append(",");
-//			buffer.append("			\"weatherIcon\":").append("\"").append(weatherIcon).append("\"").append(",");
-//			buffer.append("			\"pressure\":").append(pressure).append(",");
-//			buffer.append("			\"humidity\":").append(humidity).append(",");
-//			buffer.append("			\"windSpeed\":").append(windSpeed).append(",");
-//			buffer.append("		}	");
-//			buffer.append("	]	");
-//			buffer.append("}	");
-//			
-//		}catch(Exception e) {
-//			e.getMessage();
-//		}
-//		return buffer.toString();
-//	}
 
 }
